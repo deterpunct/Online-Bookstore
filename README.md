@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 在线书店系统
 
 ## 项目简介
@@ -142,3 +143,10 @@ npm run build
 
 ## 许可证
 MIT License 
+=======
+Download the above folders, and run the following codes to install node_modules:
+```
+cd frontend/backend/mcp-server
+npm ci
+```
+>>>>>>> 4acecc2b587ae1a295db4c9ce11fba85d98f997e
