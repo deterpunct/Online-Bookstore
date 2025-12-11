@@ -141,7 +141,12 @@ npm run build
 3. 前端开发时需要后端服务运行
 4. 生产环境需要配置HTTPS
 
+## 问题
+1. backend缺少package文件
+2. frontend和mcp-server缺少 package-lock文件，后续补上
+   
 ## 许可证
+
 MIT License 
 =======
 Download the above folders, and run the following codes to install node_modules:
