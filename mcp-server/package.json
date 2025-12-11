@@ -1,0 +1,27 @@
+{
+  "name": "bookstore-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for E-BookStore - Book Search",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test-server.js",
+    "debug": "node debug-mcp.js",
+    "check": "node quick-check.js",
+    "test-tools": "node test-tools.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "bookstore"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "mysql2": "^3.6.5",
+    "dotenv": "^16.3.1"
+  }
+}
+

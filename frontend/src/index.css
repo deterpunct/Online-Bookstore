@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+}
+
+.logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ant-row-rtl .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+
+.book-card {
+  margin-bottom: 16px;
+}
+
+.book-cover {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.register-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.book-detail-modal .ant-modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item-info {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 书籍卡片样式 */
+.book-cover {
+  height: 450px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.ant-card:hover .book-cover {
+  transform: scale(1.05);
+}
+
+.ant-card {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ant-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* 书籍详情模态框样式 */
+.book-detail-modal .ant-modal-content {
+  border-radius: 12px;
+}
+
+.book-detail-modal .ant-modal-header {
+  border-radius: 12px 12px 0 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.book-detail-modal .ant-modal-title {
+  color: white;
+}
+
+.book-detail-modal .ant-modal-close {
+  color: white;
+}
+
+.book-detail-modal .ant-modal-close:hover {
+  color: #f0f0f0;
+}
+
+/* 分类标签样式 */
+.category-tag {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* 价格样式 */
+.price-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f50;
+}
+
+/* 库存标签样式 */
+.stock-tag {
+  font-weight: 500;
+}
+
+/* 搜索区域样式 */
+.search-section {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+/* 空状态样式 */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .book-cover {
+    height: 300px;
+  }
+  
+  .search-section {
+    padding: 16px;
+  }
+}
+
+/* 加载状态样式 */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+/* 按钮样式优化 */
+.ant-btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+  transform: translateY(-1px);
+}
+
+/* 卡片内容样式 */
+.ant-card-meta-title {
+  margin-bottom: 8px !important;
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.ant-card-meta-description {
+  color: #8c8c8c;
+}
+
+/* 标签样式 */
+.ant-tag {
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* 输入框样式 */
+.ant-input-search .ant-input {
+  border-radius: 6px;
+}
+
+.ant-select-selector {
+  border-radius: 6px !important;
+}
+
+/* 书籍信息布局 */
+.book-info-section {
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.book-description {
+  background: #f5f5f5;
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid #1890ff;
+  margin-top: 16px;
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.book-card-animation {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* 标题样式 */
+.page-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 24px;
+}
+
+/* 统计信息样式 */
+.stats-info {
+  background: #f0f8ff;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border-left: 4px solid #1890ff;
+  margin-bottom: 16px;
+} 

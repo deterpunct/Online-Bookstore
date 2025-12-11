@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "bookstore": {
+      "command": "node",
+      "args": [
+        "E:/online-bookstore/mcp-server/index.js"
+      ],
+      "env": {
+        "DB_HOST": "localhost",
+        "DB_PORT": "3306",
+        "DB_USER": "root",
+        "DB_PASSWORD": "Wangzc830209",
+        "DB_NAME": "bookstore"
+      }
+    }
+  }
+}
+
